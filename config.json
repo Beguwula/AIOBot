@@ -1,0 +1,8 @@
+{
+    "PREFIX": "!",
+
+    "WELCOMER_CHANNEL_MESSAGE_ENABLED": true,
+    "WELCOMER_CHANNEL_ID": 1252977566265118771,
+    "WELCOMER_CHANNEL_MESSAGE": "Welcome, {mention}! Enjoy your stay.",
+    "WELCOMER_DM_MESSAGE": "Welcome to the server! Feel free to explore."
+}
