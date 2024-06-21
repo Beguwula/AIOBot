@@ -2,5 +2,6 @@
     "ENABLED": true,
     "DISABLED": false,
 
-    "Welcomer": true
+    "Welcomer": true,
+    "InviteBlocker": true
 }
