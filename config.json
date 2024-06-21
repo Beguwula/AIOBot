@@ -8,5 +8,5 @@
 
     "INVITEBLOCKER_ALLOWED_CHANNELS": [],
     "INVITEBLOCKER_ALLOWED_ROLES": [],
-    "INVITEBLOCKER_MESSAGE": "EXAMPLE: You cannot send invites here."
+    "INVITEBLOCKER_MESSAGE": "EXAMPLE: {mention} You cannot send invites here."
 }
