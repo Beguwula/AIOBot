@@ -4,5 +4,9 @@
     "WELCOMER_CHANNEL_MESSAGE_ENABLED": true,
     "WELCOMER_CHANNEL_ID": 0,
     "WELCOMER_CHANNEL_MESSAGE": "EXAMPLE: Welcome, {mention}! Enjoy your stay.",
-    "WELCOMER_DM_MESSAGE": "EXAMPLE: Welcome to the server! Feel free to explore."
+    "WELCOMER_DM_MESSAGE": "EXAMPLE: Welcome to the server! Feel free to explore.",
+
+    "INVITEBLOCKER_ALLOWED_CHANNELS": [],
+    "INVITEBLOCKER_ALLOWED_ROLES": [],
+    "INVITEBLOCKER_MESSAGE": "EXAMPLE: You cannot send invites here."
 }
