@@ -40,6 +40,7 @@ async def on_message(message):
         # Check if the message is in an allowed channel
         allowed_channels = config.get("INVITEBLOCKER_ALLOWED_CHANNELS")
         allowed_roles = config.get("INVITEBLOCKER_ALLOWED_ROLES")
+        blockedInviteMessage = config.get("INVITEBLOCKER_MESSAGE")
         whitelisted = any(role.id in allowed_roles for role in message.author.roles)
 
         if message.channel.id not in allowed_channels and not whitelisted:
@@ -50,6 +51,6 @@ async def on_message(message):
             # Check if the message contains an invite link
             if "discord.gg" in content or "discordapp.com/invite" in content or "gg/" in content:
                 await message.delete()
-                await message.channel.send("Invite links are not allowed!")
+                await message.channel.send(blockedInviteMessage)
 
 bot.run(key)
