@@ -40,7 +40,7 @@ async def on_message(message):
         # Check if the message is in an allowed channel
         allowed_channels = config.get("INVITEBLOCKER_ALLOWED_CHANNELS")
         allowed_roles = config.get("INVITEBLOCKER_ALLOWED_ROLES")
-        blockedInviteMessage = config.get("INVITEBLOCKER_MESSAGE").format(mention=member.mention)
+        blockedInviteMessage = config.get("INVITEBLOCKER_MESSAGE").format(mention=message.author.mention)
         whitelisted = any(role.id in allowed_roles for role in message.author.roles)
 
         if message.channel.id not in allowed_channels and not whitelisted:
