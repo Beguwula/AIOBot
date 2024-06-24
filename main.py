@@ -49,7 +49,7 @@ async def on_message(message):
             content = message.content.lower()
 
             # Check if the message contains an invite link
-            if "discord.gg" in content or "discordapp.com/invite" in content or "gg/" in content:
+            if "discord.gg" in content or "discordapp.com/invite" in content or "gg/" in content or "discord.com/invite" in content:
                 await message.delete()
                 await message.channel.send(blockedInviteMessage)
 
